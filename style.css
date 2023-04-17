@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains" , sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #495057;
+}
+
+.container{
+    position: relative;
+    padding: 50px 50px;
+    background: #e9ecef;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ced4da;
+}
+
+.container h2{
+    color: black;
+    margin-bottom: 45px;
+    margin-top: 1px;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding-left: 0.9px;
+    border-left: 5px solid #adb5bd;
+}
+
+.container .inputbox{
+    position: relative;
+    width: 300px;
+    height: 80px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.container .inputbox input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+}
+.container .inputbox span{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .inputbox input:focus ~ span{
+    transform: translateY(-36px);
+    font-size: 12px;
+    color: black;
+}
+.container .inputbox input[type="submit"]{
+    background: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.container .inputbox input[type="submit"]:hover{
+    background: black;
+}
+
+
+
